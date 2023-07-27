@@ -1,0 +1,396 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sajilo Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+      <div class="nav-logo"></div>
+      <div class="logo"></div>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Halls</a>
+      <a href="#">Events</a>
+      <a href="#">Offers</a>
+      
+      <div class="navbar-search">
+        <button navbar-bell><i class="fa-duotone fa-bell-plus"></i></button>
+        <input type="text" placeholder="Search movies &hall" class="search-input">
+  <button class="navbar-search-icon"><i class="fa fa-search"></i></button>
+  
+     <a href="#"> <button class="nav-login">Login</button></a>
+      </div>
+      
+    </div></header>
+    <section>
+      <video id="slider" autoplay muted loop>
+        <source src="video/video1.mp4" type="video/mp4">
+      </video>
+      <ul class="navigation">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gMdpaIDQl2I" loop class="video-slider" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gMdpaIDQl2I" loop class="video-slider" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gMdpaIDQl2I" loop class="video-slider" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gMdpaIDQl2I" loop class="video-slider" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+    </ul>  </section>
+    </section>
+    <script type="text/javascript">
+      function videoselector (videoLink) {
+        document.getElementById('slider').src=videoLink;
+      }
+    </script>
+    
+   
+  </body>
+</html>
+# style.css//
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+
+
+}
+.navbar{
+    height:60px;
+    width: fit-content;
+    background-color: #0f1111;
+    display: flex;
+    align-items:center;
+    color: #fff;
+}
+.nav-logo{
+    height: 50px;
+    width:100px;
+}
+.logo{
+    background-image: url(logo.png);
+    height: 50px;
+    width: 10%;
+    background-size:cover ;
+
+}
+
+button{
+   
+
+    
+    
+}
+#logo{
+
+    color: #f08804;
+    font-size: 25px;    
+}
+a{
+    margin-left:50px;
+    text-decoration: none;
+    color: #fff;
+}
+.search-input{
+    width: 350;
+    height: 23px;
+    position: relative;
+    border-radius: 25px;
+    padding: 8px 40px 8px 20px ;
+
+}
+.navbar-search{
+    margin-left: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 3rem;
+    position: relative;
+}
+.navbar-search-icon{
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    position:relative;
+    border-radius: 50%;
+}
+
+
+.navbar-bell{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-login{
+    color: black;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color:white;
+    border-radius: 10px;
+    margin-right: 150px;
+    cursor: pointer;
+  
+}
+body{
+    background:linear-gradient(180deg, rgba(255, 0, 0, 0.83) 0%, #562EB4 100%);
+    background-attachment: fixed;
+    ;
+}
+ection{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+section video{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section .navigation{
+	position: absolute;
+	padding: 1px;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 150px;
+}
+
+section .navigation li{
+	list-style: none;
+	cursor: pointer;
+	border-radius: 4px;
+	margin: 1px;
+	border: 1px solid #fff;
+	opacity: 0.7;
+}
+
+section .navigation li img{
+	transition: 0.5s;
+}
+section .navigation li img:hover{
+	height: 150px;
+	width: 200px;
+	border: 2px solid #fff;
+}
+//register page html code///
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajilo Booking/Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-logo"></div>
+      <div class="logo"></div>
+      <h2>Register</h2>
+      <div class="form">
+        <div class="input-box">
+            <label for="name">First Name*</label>
+            <input type="name" placeholder="Enter First Name" name="name" required>
+         </div>
+           <div class="input-box">
+            <label for="name">Last Name*</label>
+            <input type="name" placeholder="Enter Last Name" name="namr" required>
+           </div>
+           <div class="input-box">
+            <label for="name">Email*</label>
+            <input type="name" placeholder="Email" name="name" required>
+           </div>
+           <div class="input-box">
+            <label for="name">Mobile Number*</label>
+            <input type="name" placeholder="Mobile Number" name="name" required>
+           </div>
+           <div class="input-box">
+            <label for="name">Password*</label>
+            <input type="name" placeholder="password" name="name" required>
+           </div>
+           <div class="input-box">
+            <label for="name">Confirm Password*</label>
+            <input type="name" placeholder="confirm password" name="name" required>
+           </div>
+           <div class="input-box">
+            <label for="name">DOB</label>
+            <input type="name" placeholder="dd/mm/yyyy" name="name" required>
+           </div>
+           
+           <span class="gender-title">Gender</span>
+           <div class="gender-catagory">
+              <input type="radio" name="gender" id="male">
+              <label for="male">Male</label> 
+              <input type="radio" name="gender" id="female">
+              <label for="female">Female</label> 
+              <input type="radio" name="gender" id="others">
+              <label for="others">Others</label>          
+            </div>
+           <div class="input-box">
+            <label for="name">Hall Location*</label>
+            <input type="name" placeholder="Kathmandu" name="name" required>
+           </div>
+           <div class="input-box">
+            <label for="name">Hall Name*</label>
+            <input type="name" placeholder=" Big Movies City Center" name="name" required>
+           </div>
+          <div class="term"><input type="checkbox"> I have read and accepted the <a href="#">Tearms of Use and Privacy Policy</a> </div></div>    
+    <div class="button-container">
+        <button>Register</button>
+    </div>
+    
+</body>
+</html>
+//register css//
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: #562EB4;
+    
+}
+.logo{
+    background-image: url(logo.png);
+    height: 50px;
+    width: 10%;
+    background-size:cover ;
+    align-items: center;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;  
+}
+.container{
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    overflow: rgba(0,0,0,0.2);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.6);
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 1px solid silver;
+}
+.form{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.input-box{
+    display: flex;
+    flex-wrap:wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+.input-box label , .gender-title{
+    width: 95%;
+    color: #fff;
+    font-weight: bold;
+    margin: 5px 0;
+     display: flex;
+    flex-wrap:wrap;
+}
+
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box input:is(:focus,:valid){
+box-shadow: o 3px 6px rgba(0,0,0,0.2);
+}
+.term{
+    font-size: 14px;
+    font-style: italic;
+color: #fff;
+margin: 5px 0;
+padding: 10px;
+line-height: 1.5;
+}
+.term a{
+    font-weight: bold;
+    text-decoration: none;
+    color: skyblue;
+}
+.term a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #380036;
+}
+.button-container{
+    margin: 15px 0;
+    align-items: center;
+   
+}
+.button-container button{
+width: 100%;
+margin-top: 10px;
+padding: 10px;
+display: block;
+font-size: 20px;
+color: #fff;
+border: none;
+border-radius: 5px;
+background-image: linear-gradient(to margin-right,#aa076b,#61045f);
+cursor: pointer;
+transition: 0.3s;
+}
+
+.button-container button:hover{
+    background-image: linear-gradient(to right,#61045f,#aa076b);
+}
+.gender-catagory label{
+    padding: 0 20px 0 5px ;
+    font-size: 14px;
+}
+.gender-catagory{
+    color: gainsboro;
+}
+.gender-catagory label,.gender-catagory input{
+cursor: pointer
+}
+
+.gender-title{
+    font-size: 16px;
+}
+
+
